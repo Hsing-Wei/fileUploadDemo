@@ -113,8 +113,7 @@ public class FileController {
     })
     @GetMapping("/merge")
     public Resp merge(@RequestParam("md5") String md5,
-                      @RequestParam("fileName") String fileName,
-                      @RequestParam("size") String size){
+                      @RequestParam("fileName") String fileName){
 
         //1.合并分片文件
         logger.info("开始合并文件... md5: "+ md5 +" fileName: "+ fileName);
